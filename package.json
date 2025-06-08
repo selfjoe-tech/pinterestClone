@@ -13,7 +13,6 @@
   "dependencies": {
     "@sanity/client": "^6.28.3",
     "@sanity/image-url": "^1.1.0",
-    "@sanity/vision": "^2.2.6",
     "argon2": "^0.41.1",
     "autoprefixer": "^10.4.21",
     "bcrypt": "^5.1.1",
