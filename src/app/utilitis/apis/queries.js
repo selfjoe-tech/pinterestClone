@@ -342,7 +342,7 @@ const userProfileQuery = `*[_type == "user" && _id == $userId][0] {
 }`;
 
 
-  export const userRelationsQuery = `*[ _type == "user" && _id == $userId ][0] {
+  const userRelationsQuery = `*[ _type == "user" && _id == $userId ][0] {
     likedPins[]->{
       _id,
     },
@@ -356,7 +356,7 @@ const userProfileQuery = `*[_type == "user" && _id == $userId][0] {
   }`;
 
 
-  export const userFollowDataQuery = `*[_type == "user" && _id == $userId][0]{
+  const userFollowDataQuery = `*[_type == "user" && _id == $userId][0]{
     following[]->{
       _id,
     }
