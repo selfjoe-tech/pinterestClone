@@ -28,7 +28,6 @@ const mailLink = async (verifyObject) => {
             subject: 'Reset Password - Ben Dover',
             text: `This is your link to reset your password: http://localhost:3000/reset-password/${userId}`,
         };
-        const result = await transporter.sendMail(mailOptions);
         return {error: false, message: "Email sent"};
     }
   
