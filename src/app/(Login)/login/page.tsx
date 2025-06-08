@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Login from "../../../components/Login"
 import Link from "next/link.js";
 
