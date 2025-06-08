@@ -19,7 +19,8 @@ const mailCode = async (verifyObject) => {
   };
 
   try {
-    const result = await transporter.sendMail(mailOptions);    
+    const result = await transporter.sendMail(mailOptions);
+    return result;
   } catch (error) {
     console.error('Error sending email:', error);
   }
