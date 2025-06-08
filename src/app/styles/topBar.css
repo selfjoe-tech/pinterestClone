@@ -1,0 +1,56 @@
+.topBar{
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width:90vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: 100px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: black;
+  }
+
+
+  @media (max-width: 788px) {
+    .topBar {
+      margin-left: 20px
+    }
+      
+  }
+
+  .search{
+    flex:1;
+    background-color: transparent;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .search input{
+    flex:1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    height: 50px;
+  }
+
+.search input::placeholder {
+  color: gray;
+}
+
+.search button {
+    background: none;      
+    border: none;          
+    outline: none;                     
+    cursor: pointer;        
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+}

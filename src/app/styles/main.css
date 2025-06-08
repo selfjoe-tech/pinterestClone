@@ -1,0 +1,37 @@
+/* .app {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: left;
+    display: flex;
+  } */
+  
+html {
+  background-color: black !important;
+}
+
+body {
+  background-color: black !important;
+}
+  .content {
+    flex: 1;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+  }
+  
+  .loadingContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+

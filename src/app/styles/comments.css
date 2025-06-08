@@ -1,0 +1,152 @@
+a{
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+  background-color: black !important; /* Force black background */
+  border-color: black !important;     /* Force black border */
+}
+
+#collapseComments {
+  max-height: 500px; /* Change this value as needed */
+  overflow-y: auto;
+}
+
+#collapseComments::-webkit-scrollbar {
+  width: 4px;
+
+}
+
+#collapseComments::-webkit-scrollbar-thumb {
+  background-color: white; /* The draggable part */
+  border-radius: 2px;
+  
+}
+
+#collapseComments::-webkit-scrollbar-track {
+  background-color: transparent; /* The path */
+}
+
+.custom-comment-btn {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+.toggle-comments {
+  background-color: transparent;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 700px;
+  }
+
+  .send-comment{
+    background: none;      
+    border: none;          
+    outline: none;         
+    padding: 0;            
+    margin: 0;             
+    cursor: pointer;       
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    margin-left: auto;
+  }
+  
+  .commentList {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+  }
+  
+  .comment {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .comment img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .commentContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .commentUsername{
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .commentText{
+    font-size: 14px;
+  }
+  
+  .commentTime{
+    font-size: 12px;
+    color: #a6a6a6;
+  }
+  
+
+  .formContainer{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    max-width: 700px;
+    border: 2px solid white;
+  }
+
+  @media (max-width: 751px) {
+    .formContainer{
+      margin-top: 180px;
+    }
+  }
+
+
+  .commentForm {
+    background-color: transparent;
+    padding: 4px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 90%;
+  }
+
+  
+  .commentForm input {
+    flex: 1;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .emoji {
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .emojiPicker{
+    transform: scale(0.8);
+    position: absolute;
+    right: 1px;
+    max-height: 390px;
+    bottom: 60px;
+    
+  }

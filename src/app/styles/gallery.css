@@ -1,0 +1,65 @@
+.content{
+  margin-top: 70px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 16px;
+    grid-auto-rows: 10px;
+  }
+  
+  @media (max-width: 1746px) {
+    .gallery {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  @media (max-width: 1509px) {
+    .gallery {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  @media (max-width: 1272px) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: 1035px) {
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 798px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .my-masonry-grid {
+  display: flex;
+  margin-left: -16px; /* gutter offset */
+  width: auto;
+  
+}
+.my-masonry-grid_column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px; /* gutter size */
+  background-clip: padding-box;
+  gap: 16px;
+}
+
+/* optional: remove any rounding on your media items */
+
+
+
+
+
+
+
+  /* @media (max-width: 475px) {
+    .gallery {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  } */
+  

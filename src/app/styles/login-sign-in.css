@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  @media (max-width: 788px) {
+    html, body {
+      margin: 0 0 55px 0;
+      padding: 0;
+      height: 100%;
+    }
+  }
+
+ .image-container {
+  background-color: black;
+ }
+
+/* .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/images/wallpaperflare.com_wallpaper.jpg/');
+  margin: 0;
+  padding: 0;
+    
+  }
+  
+@media (max-width: 1428px) {
+.image-container {
+    background-image: url('/images/wallhaven-dpdp9j-1.png');
+    }
+}
+
+@media (max-width: 820px) {
+    .image-container {
+        background-image: url('/images/wallhaven-1pp9w1-1.png');
+        }
+    } */
+
+
+.passwordGroup {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* justify-content: center; */
+  align-items: center;
+  border-radius:  32px;
+  width: 232px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.log-in-sign-in-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.1px);
+  padding: 20px;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+.log-in-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formGroup{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  
+}
+
+.formGroup input {
+  width: 232px;
+}
+
+form input{
+  color: white;
+}
+
+.submit-button{
+  
+  background-color: black;
+  padding: 16px;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 235px;
+}
+
+.submit-button:hover{
+  background-color: white;
+  color: black;
+
+}
+
+.show-hide-button{
+  /* background-color: white; */
+  /* padding: 16px; */
+  border: none;
+  margin-left: 60px;
+  /* border-radius: 0px 32px 32px 0px; */
+  /* color: black; */
+  font-weight: bold;
+  
+  
+}
+
+form input{
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  width: 200px;
+  color: white;
+  
+}
+
+form input::placeholder {
+  color: white;
+  
+}
+
+.inner-flex-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.password-input {
+  padding: 16px;
+  background-color: transparent;
+  border: 0px;
+  border-radius: 32px 0px 0px 32px;
+  width: 135px;
+}
+
+.title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  
+}
+
+.instruction{
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  text-decoration: underline;
+
+}
+
+.error-instruction {
+  font-family: 'Nunito Sans', sans-serif;
+  color: red;
+}
+
+.ok-instruction {
+  font-family: 'Nunito Sans', sans-serif;
+  color: green;
+}
+
+.verify-instruction{
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content:flex-end;
+  width: 232px;
+}
+
+
+
+/* .check-box{
+  display: flex;
+  justify-content: left;
+} */

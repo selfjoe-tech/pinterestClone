@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
+
+html {
+  background-color: black;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.outerPostPageContainer{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: black;
+}
+
+.postPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.postPage {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    height: 100%;
+  }
+  
+  .postContainer {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    border-radius: 32px;
+    overflow: hidden;
+  }
+  
+  .postImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: #c8bcaf;
+    width: 50%;
+  }
+  
+  .postImg img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .postDetails {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px;
+    overflow: auto;
+    color: white;
+  }
+  
+  .postUser {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .postUser span {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 1127px) {
+    .postContainer {
+      width: 50%;
+      margin-right: 16px;
+      /* max-height: 600px; */
+    }
+    
+    .ordinary-pin {
+      height: 50%;
+    }
+  }
+
+  
+  @media (max-width: 751px) {
+    .postContainer {
+      width: 100%;
+      
+      /* max-height: 600px; */
+    }
+    .story-container{
+      width: 100%;
+    }
+
+    .postContainer {
+      flex-direction: column;
+      /* max-height: 2000px; */
+    }
+
+    .ordinary-pin {
+      height: 50%;
+    }
+  }
+
+  .postVideo {
+    width: 50%;
+  }
+
+  @media (max-width: 751px) {
+    .postImg {
+      width: 100%;
+      height: 50%;
+    }
+    .postVideo {
+      width: 100%;
+      height: 40%;
+    }
+  }
+
+.story-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 50%;
+  height: 100%; */
+}
+
+.story {
+  width: 70%;
+  height: 100%;
+}
+
+.story-progress {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 4px;
+  padding: 8px 0;
+  z-index: 10;
+}
+
+.share-wrapper {
+  position: relative;
+  display: inline-block; /* shrink‐wraps around the icon */
+}
+
+/* absolutely position the tray under (or beside) the icon */
+.share-tray {
+  position: absolute;
+  top: 100%;       /* directly below the icon */
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 13px;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.share-tray small {
+  font-size: 10px;
+}
+/* optional: shift it a little if you want it to open to the left */
+.share-wrapper.left .share-tray {
+  right: auto;
+  left: 0;
+}
+
+.copy-link-btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background: #eee;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}

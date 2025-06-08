@@ -1,0 +1,7 @@
+.tag {
+    background-color: gray;
+    display: inline-block;    
+    white-space: nowrap;
+    padding: 5px;
+    border-radius: 10px;
+}
