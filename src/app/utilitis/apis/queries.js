@@ -265,7 +265,7 @@ const searchQuery = `*[
 }`;
 
 
-export const userProfileQuery = `*[_type == "user" && _id == $userId][0] {
+const userProfileQuery = `*[_type == "user" && _id == $userId][0] {
   _id,
   bio,
   userName,
