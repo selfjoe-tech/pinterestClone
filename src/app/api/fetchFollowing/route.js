@@ -1,4 +1,3 @@
-import { NextResponse } from 'next/server'
 import { client } from '@/sanity/client'
 import { userFollowDataQuery } from '@/app/utilitis/apis/queries'
 
