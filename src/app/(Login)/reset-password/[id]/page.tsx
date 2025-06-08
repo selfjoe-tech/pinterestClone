@@ -1,6 +1,5 @@
 import React from 'react'
 import ResetPassword from "../../../../components/ResetPassword"
-import Image from 'next/image'
 
 export default async function Page({ params }: { params: { id: string } }) {
   // If needed, you can await any async work here.
