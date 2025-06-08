@@ -400,6 +400,21 @@ const userProfileQuery = `*[_type == "user" && _id == $userId][0] {
       }
     }
   }`;
+
+const fetchCommentQuery = `*[_type == "comment" && _id == $commentId][0]{
+  _id,
+  text,
+  createdAt,
+  postedBy->{
+    _id,
+    userName,
+    profileImage{
+      asset->{
+        url
+      }
+    }
+  }
+}`;
   
 export {
   emailExistsQuery,
